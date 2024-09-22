@@ -109,7 +109,13 @@ Panduan ini menjelaskan langkah-langkah untuk menginstal Docker, menjalankan Gra
 
 20. Import Dashboard:
     Kunjungi [Grafana Dashboards](https://grafana.com/grafana/dashboards/?collector=nodeexporter&search=linux) untuk menemukan template dashboard yang sesuai. 
-    Salin ID dashboard yang ingin Anda gunakan dan masukkan ke dalam kolom import di Grafana, atau Anda bisa meng-upload file JSON jika memiliki.
+
+    Contoh ID dashboard yang dapat Anda gunakan:
+    - ID 14731
+    - ID 11074
+    - ID 14513
+
+    Masukkan salah satu ID ke dalam kolom import di Grafana, atau Anda bisa meng-upload file JSON jika memiliki.
 
 21. Pilih Data Source:
     Pastikan untuk memilih data source Prometheus yang sudah Anda tambahkan sebelumnya.
