@@ -11,7 +11,7 @@ mkdir -p /etc/prometheus /var/lib/prometheus
 chown prometheus:prometheus /etc/prometheus /var/lib/prometheus
 
 # Download and extract Prometheus
-PROM_VERSION="2.54.1"
+PROM_VERSION="3.2.1"
 wget "https://github.com/prometheus/prometheus/releases/download/v${PROM_VERSION}/prometheus-${PROM_VERSION}.linux-amd64.tar.gz"
 tar -xzvf "prometheus-${PROM_VERSION}.linux-amd64.tar.gz"
 cp prometheus-${PROM_VERSION}.linux-amd64/{prometheus,promtool} /usr/local/bin/
@@ -67,7 +67,7 @@ echo "Prometheus has been installed."
 useradd --no-create-home --shell /bin/false node_exporter
 
 # Download and set up Node Exporter
-NODE_EXPORTER_VERSION="1.8.2"
+NODE_EXPORTER_VERSION="1.9.0"
 wget "https://github.com/prometheus/node_exporter/releases/download/v${NODE_EXPORTER_VERSION}/node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64.tar.gz"
 tar -xzvf "node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64.tar.gz"
 cp node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64/node_exporter /usr/local/bin/
